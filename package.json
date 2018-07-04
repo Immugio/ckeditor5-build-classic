@@ -43,6 +43,7 @@
     "@ckeditor/ckeditor5-link": "^10.0.2",
     "@ckeditor/ckeditor5-list": "^11.0.0",
     "@ckeditor/ckeditor5-paragraph": "^10.0.1",
+    "@ckeditor/ckeditor5-table": "^10.0.0",
     "@ckeditor/ckeditor5-theme-lark": "^10.1.0",
     "@ckeditor/ckeditor5-upload": "^10.0.1",
     "babel-minify-webpack-plugin": "^0.3.0",
@@ -65,7 +66,7 @@
     "url": "https://github.com/ckeditor/ckeditor5-build-classic.git"
   },
   "scripts": {
-    "build": "npm run create-entry-file && npm run build-ckeditor",
+    "build": "npm run create-entry-file && npx webpack",
     "create-entry-file": "node bin/create-entry-file.js",
     "build-ckeditor": "sh bin/build-ckeditor.sh",
     "preversion": "npm run build; if [ -n \"$(git status src/ckeditor.js build/ --porcelain)\" ]; then git add -u src/ckeditor.js build/ && git commit -m 'Internal: Build.'; fi"

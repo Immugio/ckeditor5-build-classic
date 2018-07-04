@@ -1,5 +1,14 @@
-CKEditor 5 classic editor build
+CKEditor 5 classic editor build - customised
 ========================================
+
+## Important!!
+
+This is a modified version of the classic editor build for CKEditor 5. Changes made:
+* Added table plugin
+* Extended heading menu
+
+The following is the information already contained in the original version:
+
 
 [![Join the chat at https://gitter.im/ckeditor/ckeditor5](https://badges.gitter.im/ckeditor/ckeditor5.svg)](https://gitter.im/ckeditor/ckeditor5?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![npm version](https://badge.fury.io/js/%40ckeditor%2Fckeditor5-build-classic.svg)](https://www.npmjs.com/package/@ckeditor/ckeditor5-build-classic)

@@ -30,7 +30,9 @@ module.exports = {
 		'@ckeditor/ckeditor5-image/src/imageupload',
 		'@ckeditor/ckeditor5-link/src/link',
 		'@ckeditor/ckeditor5-list/src/list',
-		'@ckeditor/ckeditor5-paragraph/src/paragraph'
+		'@ckeditor/ckeditor5-paragraph/src/paragraph',
+		'@ckeditor/ckeditor5-table/src/table',
+		'@ckeditor/ckeditor5-table/src/tabletoolbar'
 	],
 
 	// Editor config.
@@ -47,12 +49,22 @@ module.exports = {
 				'imageUpload',
 				'blockQuote',
 				'undo',
-				'redo'
+				'redo',
+				'insertTable'
 			]
 		},
-
+		heading: {
+			options: [
+				{ model: "paragraph", title: "Paragraph", "class": "ck-heading_paragraph" },
+				{ model: "heading1", view: "h2", title: "Heading 1", "class": "ck-heading_heading1" },
+				{ model: "heading2", view: "h3", title: "Heading 2", "class": "ck-heading_heading2" },
+				{ model: "heading3", view: "h4", title: "Heading 3", "class": "ck-heading_heading3" },
+				{ model: "heading4", view: "h5", title: "Heading 4", "class": "ck-heading_heading4" },
+				{ model: "heading5", view: "h6", title: "Heading 5", "class": "ck-heading_heading5" }
+			]
+		},
 		image: {
-			toolbar: [ 'imageStyle:full', 'imageStyle:side', '|', 'imageTextAlternative' ]
+			toolbar: ['imageStyle:full', 'imageStyle:side', '|', 'imageTextAlternative']
 		},
 
 		// UI language. Language codes follow the https://en.wikipedia.org/wiki/ISO_639-1 format.

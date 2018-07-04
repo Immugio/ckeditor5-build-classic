@@ -1,2 +1,5 @@
 node_modules/
 package-lock.json
+/.vs/config/applicationhost.config
+/.vs/ckeditor5-build-classic/v15/.suo
+/.vs/slnx.sqlite
