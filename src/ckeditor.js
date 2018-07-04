@@ -20,6 +20,8 @@ import ImageuploadPlugin from '@ckeditor/ckeditor5-image/src/imageupload';
 import LinkPlugin from '@ckeditor/ckeditor5-link/src/link';
 import ListPlugin from '@ckeditor/ckeditor5-list/src/list';
 import ParagraphPlugin from '@ckeditor/ckeditor5-paragraph/src/paragraph';
+import TablePlugin from '@ckeditor/ckeditor5-table/src/table';
+import TabletoolbarPlugin from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -40,7 +42,9 @@ ClassicEditor.build = {
 		ImageuploadPlugin,
 		LinkPlugin,
 		ListPlugin,
-		ParagraphPlugin
+		ParagraphPlugin,
+		TablePlugin,
+		TabletoolbarPlugin
 	],
 	config: {
 		toolbar: {
@@ -55,7 +59,47 @@ ClassicEditor.build = {
 				'imageUpload',
 				'blockQuote',
 				'undo',
-				'redo'
+				'redo',
+				'insertTable'
+			]
+		},
+		heading: {
+			options: [
+				{
+					model: 'paragraph',
+					title: 'Paragraph',
+					'class': 'ck-heading_paragraph'
+				},
+				{
+					model: 'heading1',
+					view: 'h2',
+					title: 'Heading 1',
+					'class': 'ck-heading_heading1'
+				},
+				{
+					model: 'heading2',
+					view: 'h3',
+					title: 'Heading 2',
+					'class': 'ck-heading_heading2'
+				},
+				{
+					model: 'heading3',
+					view: 'h4',
+					title: 'Heading 3',
+					'class': 'ck-heading_heading3'
+				},
+				{
+					model: 'heading4',
+					view: 'h5',
+					title: 'Heading 4',
+					'class': 'ck-heading_heading4'
+				},
+				{
+					model: 'heading5',
+					view: 'h6',
+					title: 'Heading 5',
+					'class': 'ck-heading_heading5'
+				}
 			]
 		},
 		image: {
